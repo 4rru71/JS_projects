@@ -16,9 +16,9 @@ dateOptionsSelectElement.addEventListener("change", () => {
     switch (dateOptionsSelectElement.value) {
         case "yyyy-mm-dd":
           currentDateParagraph.textContent = formattedDate
-            .split("-")
-            .reverse()
-            .join("-");
+            .split("-") //usa "-" como separador y separa el string en un array.
+            .reverse() //Invierte los elementos del array.
+            .join("-");//une los elementos del array en un string.
           break;
         case "mm-dd-yyyy-h-mm":
           currentDateParagraph.textContent = `${month}-${day}-${year} ${hours} Hours ${minutes} Minutes`;
