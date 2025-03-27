@@ -19,6 +19,7 @@ function formActivity(e){
         resultDiv.innerHTML += `<p class="result">Valid US number: ${inputNum.value} </p>`
         :
         resultDiv.innerHTML += `<p class="result">Invalid US number: ${inputNum.value}</p>`
+        inputNum.value="";
     }  
 };
 
