@@ -20,6 +20,7 @@ function formActivity(e){
         :
         resultDiv.innerHTML += `<p class="result">Invalid US number: ${inputNum.value}</p>`
         inputNum.value="";
+        
     }  
 };
 
